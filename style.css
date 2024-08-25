@@ -1,0 +1,209 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+
+body {
+	background-color: rgb(154, 231, 231);
+}
+
+.Kyujin {
+	width: 250px;
+	height: 270px;
+	background-color: rgb(235, 255, 248);
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+
+	animation-name: 'fly';
+	animation-duration: 2s ;
+	animation-timing-function:ease-in-out
+}
+
+.fly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 600px;
+	height: 600px;
+	
+	animation: fly 1s ease-out infinite alternate;
+}
+
+@keyframes fly {
+	0% {transform: translateY(0%);}
+	100% {transform: translateY(-100%);}
+}
+
+.hair #hair1 {
+	width: 50px;
+	height: 120px;
+	background-color: green;
+	border-top-left-radius: 28px;
+	border-bottom-right-radius: 28px;
+	border-right: 8px solid white;
+	border-top: 8px solid white;
+	position: relative;
+	top: -90px;
+	left: 100px;
+	z-index: 1;
+}
+
+.hair #hair2 {
+	width: 50px;
+	height: 120px;
+	background-color: rgb(255, 189, 233);
+	border-top-left-radius: 28px;
+	border-bottom-right-radius: 28px;
+	border-right: 8px solid rgb(234, 255, 118);
+	border-top: 8px solid rgb(234, 255, 118);
+	position: relative;
+	top: -210px;
+	left: 150px;
+	transform: rotate(30deg);
+}
+
+.hair #hair3 {
+	width: 50px;
+	height: 120px;
+	background-color: rgb(242, 255, 61);
+	border-top-left-radius: 28px;
+	border-bottom-right-radius: 28px;
+	border-right: 8px solid rgb(255, 164, 199);
+	border-top: 8px solid rgb(235, 164, 199);
+	position: relative;
+	top: -338px;
+	left: 50px;
+	transform: rotate(-30deg);
+	z-index: 2;
+}
+
+.face .eye.left {
+	background-color: black;
+	width: 40px;
+	height: 50px;
+	border-radius: 100%;
+	position: absolute;
+	top: 85px;
+	left: 55px;
+}
+
+.face .eye.left:after {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	background-color: rgb(199, 237, 255);
+	border-top-left-radius: 60%;
+	border-top-right-radius: 60%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	position: absolute;
+	top: 55px;
+	left: 6px;
+}
+
+.face .eye.right {
+	background-color: black;
+	width: 40px;
+	height: 50px;
+	border-radius: 100%;
+	position: absolute;
+	top: 85px;
+	left: 153px;
+}
+
+.face .eye.right:after {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	background-color: rgb(199, 237, 255);
+	border-top-left-radius: 60%;
+	border-top-right-radius: 60%;
+	border-bottom-right-radius: 20%;
+	border-bottom-left-radius: 20%;
+	position: absolute;
+	top: 55px;
+	left: 11px;
+}
+
+.face .nose {
+	position:absolute;
+	top: 135px;
+	left: 111px;
+	width: 30px;
+	height: 30px;
+	background-color: orange;
+	border-radius: 30px 0 0 0;
+	transform: rotate(45deg);
+}
+
+.face .mouth {
+	position: absolute;
+	top: 172px;
+	left: 121px;
+	background-color: red;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px 0 0 0;
+	transform: rotate(225deg);
+}
+
+.ff {
+	position: absolute;
+	top: 102px;
+	left: -130px;
+	background-color: orange;
+	width: 130px;
+	height: 160px;
+	border-top-left-radius: 60%;
+	border-bottom-right-radius: 60%;
+	border-bottom: 10px solid yellow;
+}
+
+.gg {
+	position: absolute;
+	top: 102px;
+	left: 248px;
+	background-color: orange;
+	width: 130px;
+	height: 160px;
+	border-top-right-radius: 60%;
+	border-bottom-left-radius: 60%;
+	border-bottom: 10px solid yellow;
+}
+
+.tt {
+	position: absolute;
+	top: 270px;
+	left: 100px;
+	background-color: rgb(247, 79, 79);
+	width: 50px;
+	height: 70px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+
+	animation: tt 1s ease-in infinite alternate;
+}
+
+@keyframes tt {
+	0%{transform: translateY(0%);}
+	100%{transform: translateY(10000%);}
+}
+
+
+
+
+
